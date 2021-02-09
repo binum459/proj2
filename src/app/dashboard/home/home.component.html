@@ -1,0 +1,41 @@
+<body class="mymargin">
+  
+ 
+<section class="py-5 text-center container" style="color: aliceblue;">
+    <div class="">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">All Categories</h1>
+        <p class="" style="color: aliceblue;">Discover our recipie top picks and Get creative ideas for your gastronomic indulgence!</p>
+         </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" *ngIf="allctgs?.length>0">
+
+       
+        <div class="col"*ngFor ='let allctg of allctgs'>
+          <div class="card shadow-sm" >
+            <img [src]="allctg.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">{{allctg.title}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a routerLink='/dashboard/recipies/{{allctg.id}}' class="btn btn-sm btn-outline-warning" >View</a>
+                  <button  class="btn btn-sm btn-outline-danger" (click)="deleteRecipie(recipie)">Delete</button>
+                </div>
+                <small class="text-muted">{{allctg.time}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+  </div>
+</body>

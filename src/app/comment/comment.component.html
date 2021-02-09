@@ -1,0 +1,19 @@
+<div class="card-header">COMMENT HERE</div>
+<div class="card-body"  class="wrapper">
+<label for="">Recipie Title:</label>
+<br>
+<textarea name="" id="" cols="30" rows="1" [(ngModel)]='comment'> </textarea>
+<br>
+<label for="">Feedback:</label>
+<br>
+<textarea name="" id="" cols="30" rows="5" [(ngModel)]='comm'> </textarea>
+<br>
+<button (click)='post()' class="btn btn-primary">Submit</button>
+<br>
+<div *ngFor='let comments of postComment'>
+    <p>{{comments}}</p>
+</div>
+<div *ngFor='let comments of postComm'>
+    <p>{{comments}}</p>
+</div>
+</div>

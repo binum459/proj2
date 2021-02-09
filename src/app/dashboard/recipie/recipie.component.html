@@ -1,0 +1,131 @@
+
+<button routerLink="/dashboard/update" class="btn btn-success" style="margin-bottom: 20px; margin-left: 29px;">Update</button>
+
+<div class="card" *ngFor="let allctg of allctgs" > 
+
+  <!-- 1 -->
+  <div class="card-header" >
+    <h1 >{{allctg.title}}</h1>
+    <br>
+    <p>Time to cook:{{allctg.time}} </p>
+  </div>
+  <div class="card-body"  >
+  
+    <img [src]="allctg.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+<br><br>
+    <h3 >Ingredients</h3>
+    <p>{{allctg.ingredient}} </p>
+<br>
+<div >
+    <h3>Instructions</h3>
+    <p>{{allctg.instruction}} </p>
+  </div>
+  </div>
+<!-- 2 -->
+<!-- <div class="card-header" *ngSwitchCase="'Sauteed Mushrooms'">
+  <h1 >{{recipie.title}}</h1>
+  <br>
+  <p>Time to cook:{{recipie.time}} </p>
+</div>
+<div class="card-body" *ngSwitchCase="'Sauteed Mushrooms'">
+
+  <img [src]="recipie.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+  <h3 >Ingredients</h3>
+  <p>{{recipie.ingredient}} </p>
+
+  <h3>Instructions</h3>
+  <p>{{recipie.instruction}} </p>
+</div> -->
+<!-- 3 -->
+
+<!-- <div class="card-header" *ngSwitchCase="'Hot Dark Chocolate'">
+  <h1 >{{recipie.title}}</h1>
+  <br>
+  <p>Time to cook:{{recipie.time}} </p>
+</div>
+<div class="card-body"  *ngSwitchCase="'Hot Dark Chocolate'">
+
+  <img [src]="recipie.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+  <h3 >Ingredients</h3>
+  <p>{{recipie.ingredient}} </p>
+
+  <h3>Instructions</h3>
+  <p>{{recipie.instruction}} </p>
+</div> -->
+
+
+<!-- 4 -->
+
+<!-- <div class="card-header" *ngSwitchCase="'Fried Ice Cream'">
+  <h1 >{{recipie.title}}</h1>
+  <br>
+  <p>Time to cook:{{recipie.time}} </p>
+</div>
+<div class="card-body" *ngSwitchCase="'Fried Ice Cream'">
+
+  <img [src]="recipie.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+  <h3 >Ingredients</h3>
+  <p>{{recipie.ingredient}} </p>
+
+  <h3>Instructions</h3>
+  <p>{{recipie.instruction}} </p>
+</div> -->
+
+<!-- 5 -->
+<!-- <div class="card-header" *ngSwitchCase="'Vegan Chocolate Cake With Vegan Icing'">
+  <h1 >{{recipie.title}}</h1>
+  <br>
+  <p>Time to cook:{{recipie.time}} </p>
+</div>
+<div class="card-body"  *ngSwitchCase="'Vegan Chocolate Cake With Vegan Icing'">
+
+  <img [src]="recipie.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+  <h3 >Ingredients</h3>
+  <p>{{recipie.ingredient}} </p>
+
+  <h3>Instructions</h3>
+  <p>{{recipie.instruction}} </p>
+</div>
+ -->
+
+<!-- 6 -->
+<!-- <div class="card-header" *ngSwitchCase="'Spiced Lemonade'">
+  <h1 >{{recipie.title}}</h1>
+  <br>
+  <p>Time to cook:{{recipie.time}} </p>
+</div>
+<div class="card-body"  *ngSwitchCase="'Spiced Lemonade'">
+
+  <img [src]="recipie.image" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+  <h3 >Ingredients</h3>
+  <p>{{recipie.ingredient}} </p>
+
+  <h3>Instructions</h3>
+  <p>{{recipie.instruction}} </p>
+</div> -->
+
+<!-- def -->
+<!-- <div class="card-header" *ngSwitchDefault>
+  <h1 >{{recipie.title}}</h1>
+  <br>
+  <p>Time to cook:{{recipie.time}} </p>
+</div>
+<div class="card-body" *ngSwitchDefault>
+
+  <img [src]="recipie.image" alt=""  width="100%" height="225">
+
+  <h3 >Ingredients</h3>
+  <p>{{recipie.ingredient}} </p>
+
+  <h3>Instructions</h3>
+  <p>{{recipie.instruction}} </p>
+</div> -->
+
+
+
+</div>

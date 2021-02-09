@@ -1,0 +1,45 @@
+
+  
+
+<nav class="navbar navbar-light" style="background-color: #f03221ca;">
+    <h1 class="navbar-brand" style="font-size: 30px;color: aliceblue; ">Recipie</h1>
+    <div class="my-2 my-lg-0">
+        <button class="btn btn-outline-light my-2 my-sm-0" (click)='logout()'>Logout</button>
+        <a routerLink="/dashboard/add" style="color: aliceblue; float: left; margin: 9px; padding-right: 10px; text-decoration: none;" >Add Recipie</a>
+        <a routerLink="/dashboard/comment" style="color: aliceblue; float: left; margin: 9px; padding-right: 10px; text-decoration: none;" >Comments</a>
+    </div>
+   
+    </nav>
+
+
+
+<article class="my-5" id="button-group" >
+    <div>
+  <div class="bd-example">
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="First group" style="margin-left: 33%;">
+        <a routerLink="/dashboard/home" class="btn btn-outline-secondary" >All Categories</a>
+        <a routerLink="/dashboard/desserts" class="btn btn-outline-secondary" >Desserts</a>
+        <a routerLink="/dashboard/snacks" class="btn btn-outline-secondary" >Snacks</a>
+        <a routerLink="/dashboard/drinks" class="btn btn-outline-secondary" >Beverages</a>
+        
+    </div>
+    
+  </div>
+  </div>
+</div>
+</article>
+
+
+<router-outlet></router-outlet>
+
+<footer class="bg-light text-center text-lg-start">
+     
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(240, 14, 14, 0.63)">
+        Copyright © Recipie.2021.
+      
+    </div>
+    <!-- Copyright -->
+  </footer>
+

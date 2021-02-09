@@ -1,0 +1,28 @@
+<div class="card-header">
+    <h2>Update</h2>
+</div>
+<div class="card-body" class="wrapper">
+<form action="" (ngSubmit)="editRecipie()">
+<label for=""  >Title:</label>
+<input type="text"  name="title" [(ngModel)]="recipieItem.title">
+<br>
+<label for="" >Time:</label>
+<input type="text"  name="time" [(ngModel)]="recipieItem.time">
+<br>
+<label for="" >Ingredients:</label>
+<textarea name="" id="" cols="30" rows="10"  name="ingredient" [(ngModel)]="recipieItem.ingredient"></textarea>
+<br>
+<label for="" [(ngModel)]="recipieItem.instruction">Instructions:</label>
+<textarea name="" id="" cols="30" rows="10"  name="instruction" [(ngModel)]="recipieItem.instruction"></textarea>
+<br>
+
+<form action="/img" method="POST" enctype="multipart/form-data">
+<label for="" >Image</label>
+<input type="file" [(ngModel)]="recipieItem.image"  name="image">
+</form>
+
+
+<br>
+<button class="btn btn-primary"> Submit</button>
+</form>
+</div>

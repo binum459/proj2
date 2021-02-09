@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+  }
+  .card-header{
+    text-align: center;
+    font-family:'Oswald',arial ,sans-serif;
+    color:rgba(37, 26, 6, 0.63);
+    
+    
+ }
